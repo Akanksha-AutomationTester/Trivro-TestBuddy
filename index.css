@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0f172a; /* Slate 900 */
+  color: #f8fafc; /* Slate 50 */
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1e293b; 
+}
+::-webkit-scrollbar-thumb {
+  background: #475569; 
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b; 
+}
+
+.markdown-body h1 { font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem; color: #38bdf8; }
+.markdown-body h2 { font-size: 1.25rem; font-weight: 600; margin-top: 1rem; margin-bottom: 0.5rem; color: #7dd3fc; }
+.markdown-body h3 { font-size: 1.1rem; font-weight: 600; margin-top: 0.75rem; color: #bae6fd; }
+.markdown-body p { margin-bottom: 0.75rem; line-height: 1.6; }
+.markdown-body ul, .markdown-body ol { margin-left: 1.5rem; margin-bottom: 0.75rem; list-style-type: disc; }
+.markdown-body code { background-color: #334155; padding: 0.2rem 0.4rem; border-radius: 0.25rem; font-family: monospace; }
+.markdown-body pre { background-color: #1e293b; padding: 1rem; border-radius: 0.5rem; overflow-x: auto; margin-bottom: 1rem; }
+.markdown-body table { width: 100%; border-collapse: collapse; margin-bottom: 1rem; }
+.markdown-body th, .markdown-body td { border: 1px solid #475569; padding: 0.75rem; text-align: left; }
+.markdown-body th { background-color: #1e293b; color: #e2e8f0; }
